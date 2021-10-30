@@ -1,0 +1,116 @@
+[class^="letter_"]
+	display: block
+	position: relative
+	width: 7.5rem
+	height: 9rem
+	background-color: $color_secundario
+	border: 5px solid #000
+
+.logo-2 [class^="letter_"]
+	width: 9rem
+	height: 11.5rem
+	border: 8px solid #000
+
+.letter_A	
+	.f1
+		display: block
+		position: absolute
+		width: 21.75%
+		height: 17.87%
+		background-color: #000
+		top: 24%
+		left: calc(50% - 10.875%)
+	.f2	
+		display: block
+		position: absolute
+		width: 9.53%
+		height: 33.03%
+		background-color:#000
+		left: calc(50% - 4.765%)
+		bottom: 0
+		
+.letter_C
+	.f1
+		display: block
+		position: absolute
+		width: 55.08%
+		height: 38.1%
+		background-color:#000
+		top: calc( 50% - 19.05% )
+		right: 0
+
+.letter_D
+	.f1
+		display: block
+		position: absolute
+		width: 3.5rem
+		height: 4.5rem
+		background-color: #000
+		border-radius: 0 100% 0 0
+		top: calc( 50% - 2.25rem)
+		left: calc(50% - 1.75rem)
+
+.letter_E
+	.f1
+		display: block
+		position: absolute
+		width: 55.08%
+		height: 9.53%
+		background-color: #000
+		top: calc( 33% - 4.765% )
+		right: 0
+	.f2
+		@extend .f1
+		top: calc( 66% - 4.765% )
+
+.letter_H
+	.f1
+		width: 9.53%
+		height: 3rem
+		@include letter_position($left: calc(50% - 4.765%))
+	.f2
+		@extend .f1
+		@include letter_position($top: calc(100% - 3rem), $left:calc(50% - 4.765%))
+
+.letter_N
+	.f1
+		width: 9.53%
+		height: 33.03%
+		@include letter_position($left: calc(66% - 4.765%))
+	.f2
+		@extend .f1
+		@include letter_position($top: calc(100% - 33.03%), $left:calc(33% - 4.765%))
+
+.letter_O
+	.f1
+		width: 54%	
+		height: 56.3%
+		@include letter_position($left: calc(50% - 1.75rem), $top: calc(50% - 2.25rem))
+.letter_P
+	.f1
+		width: 52.19%
+		height: 47.63%
+		@include letter_position($left: calc(100% - 52.19%), $top: calc(100% - 47.63%))
+	.f2
+		width: 43.5%
+		height: 17.87%
+		@include letter_position($left: calc(50% - 21.75%), $top: 17%)
+
+.letter_S
+	.f1
+		width: 55.08%
+		height: 9.53%
+		@include letter_position($top: calc(66% - 4.765%))
+	.f2
+		@extend .f1
+		@include letter_position($left: calc(100% - 55.08%), $top: calc(33% - 4.765% ))
+
+.hero__logo
+	height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+.logo-1 , .logo-2
+	display: flex

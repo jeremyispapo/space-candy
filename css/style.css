@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+[class^="letter_"] {
+  display: block;
+  position: relative;
+  width: 7.5rem;
+  height: 9rem;
+  background-color: #ffffff;
+  border: 5px solid #000;
+}
+
+.logo-2 [class^="letter_"] {
+  width: 9rem;
+  height: 11.5rem;
+  border: 8px solid #000;
+}
+
+.letter_A .f1, .letter_A .letter_E .f2, .letter_E .letter_A .f2, .letter_A .letter_H .f2, .letter_H .letter_A .f2, .letter_A .letter_N .f2, .letter_N .letter_A .f2, .letter_A .letter_S .f2, .letter_S .letter_A .f2 {
+  display: block;
+  position: absolute;
+  width: 21.75%;
+  height: 17.87%;
+  background-color: #000;
+  top: 24%;
+  left: calc(50% - 10.875%);
+}
+
+.letter_A .f2 {
+  display: block;
+  position: absolute;
+  width: 9.53%;
+  height: 33.03%;
+  background-color: #000;
+  left: calc(50% - 4.765%);
+  bottom: 0;
+}
+
+.letter_C .f1, .letter_C .letter_E .f2, .letter_E .letter_C .f2, .letter_C .letter_H .f2, .letter_H .letter_C .f2, .letter_C .letter_N .f2, .letter_N .letter_C .f2, .letter_C .letter_S .f2, .letter_S .letter_C .f2 {
+  display: block;
+  position: absolute;
+  width: 55.08%;
+  height: 38.1%;
+  background-color: #000;
+  top: calc( 50% - 19.05%);
+  right: 0;
+}
+
+.letter_D .f1, .letter_D .letter_E .f2, .letter_E .letter_D .f2, .letter_D .letter_H .f2, .letter_H .letter_D .f2, .letter_D .letter_N .f2, .letter_N .letter_D .f2, .letter_D .letter_S .f2, .letter_S .letter_D .f2 {
+  display: block;
+  position: absolute;
+  width: 3.5rem;
+  height: 4.5rem;
+  background-color: #000;
+  border-radius: 0 100% 0 0;
+  top: calc( 50% - 2.25rem);
+  left: calc(50% - 1.75rem);
+}
+
+.letter_E .f1, .letter_E .f2 {
+  display: block;
+  position: absolute;
+  width: 55.08%;
+  height: 9.53%;
+  background-color: #000;
+  top: calc( 33% - 4.765%);
+  right: 0;
+}
+
+.letter_E .f2 {
+  top: calc( 66% - 4.765%);
+}
+
+.letter_H .f1, .letter_H .f2 {
+  width: 9.53%;
+  height: 3rem;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: calc(50% - 4.765%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_H .f2 {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: calc(100% - 3rem);
+  left: calc(50% - 4.765%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_N .f1, .letter_N .f2 {
+  width: 9.53%;
+  height: 33.03%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: calc(66% - 4.765%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_N .f2 {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: calc(100% - 33.03%);
+  left: calc(33% - 4.765%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_O .f1, .letter_O .letter_E .f2, .letter_E .letter_O .f2, .letter_O .letter_H .f2, .letter_H .letter_O .f2, .letter_O .letter_N .f2, .letter_N .letter_O .f2, .letter_O .letter_S .f2, .letter_S .letter_O .f2 {
+  width: 54%;
+  height: 56.3%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: calc(50% - 2.25rem);
+  left: calc(50% - 1.75rem);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_P .f1, .letter_P .letter_E .f2, .letter_E .letter_P .f2, .letter_P .letter_H .f2, .letter_H .letter_P .f2, .letter_P .letter_N .f2, .letter_N .letter_P .f2, .letter_P .letter_S .f2, .letter_S .letter_P .f2 {
+  width: 52.19%;
+  height: 47.63%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: calc(100% - 47.63%);
+  left: calc(100% - 52.19%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_P .f2 {
+  width: 43.5%;
+  height: 17.87%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 17%;
+  left: calc(50% - 21.75%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_S .f1, .letter_S .f2 {
+  width: 55.08%;
+  height: 9.53%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: calc(66% - 4.765%);
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.letter_S .f2 {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: calc(33% - 4.765%);
+  left: calc(100% - 55.08%);
+  bottom: 0;
+  right: 0;
+}
+
+.hero__logo {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-1, .logo-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  background-color: #292929;
+}
+/*# sourceMappingURL=style.css.map */

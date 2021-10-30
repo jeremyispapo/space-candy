@@ -1,0 +1,11 @@
+@mixin letter_f
+	display: block
+	position: absolute
+	background-color: #000
+
+@mixin letter_position($top:0, $left:0, $bottom:0, $right:0)
+	@include letter_f
+	top: $top
+	left: $left
+	bottom: $bottom
+	right: $right
