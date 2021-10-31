@@ -24,7 +24,7 @@ html {
   border: 8px solid #000;
 }
 
-.letter_A .f1, .letter_A .letter_E .f2, .letter_E .letter_A .f2, .letter_A .letter_H .f2, .letter_H .letter_A .f2, .letter_A .letter_N .f2, .letter_N .letter_A .f2, .letter_A .letter_S .f2, .letter_S .letter_A .f2 {
+.letter_A .f1, .letter_A .letter_E .f2, .letter_E .letter_A .f2, .letter_A .letter_H .f2, .letter_H .letter_A .f2, .letter_A .letter_I .f2, .letter_I .letter_A .f2, .letter_A .letter_N .f2, .letter_N .letter_A .f2, .letter_A .letter_S .f2, .letter_S .letter_A .f2 {
   display: block;
   position: absolute;
   width: 21.75%;
@@ -44,7 +44,7 @@ html {
   bottom: 0;
 }
 
-.letter_C .f1, .letter_C .letter_E .f2, .letter_E .letter_C .f2, .letter_C .letter_H .f2, .letter_H .letter_C .f2, .letter_C .letter_N .f2, .letter_N .letter_C .f2, .letter_C .letter_S .f2, .letter_S .letter_C .f2 {
+.letter_C .f1, .letter_C .letter_E .f2, .letter_E .letter_C .f2, .letter_C .letter_H .f2, .letter_H .letter_C .f2, .letter_C .letter_I .f2, .letter_I .letter_C .f2, .letter_C .letter_N .f2, .letter_N .letter_C .f2, .letter_C .letter_S .f2, .letter_S .letter_C .f2 {
   display: block;
   position: absolute;
   width: 55.08%;
@@ -54,15 +54,16 @@ html {
   right: 0;
 }
 
-.letter_D .f1, .letter_D .letter_E .f2, .letter_E .letter_D .f2, .letter_D .letter_H .f2, .letter_H .letter_D .f2, .letter_D .letter_N .f2, .letter_N .letter_D .f2, .letter_D .letter_S .f2, .letter_S .letter_D .f2 {
+.letter_D .f1, .letter_D .letter_E .f2, .letter_E .letter_D .f2, .letter_D .letter_H .f2, .letter_H .letter_D .f2, .letter_D .letter_I .f2, .letter_I .letter_D .f2, .letter_D .letter_N .f2, .letter_N .letter_D .f2, .letter_D .letter_S .f2, .letter_S .letter_D .f2 {
+  -webkit-clip-path: polygon(23% 25%, 63% 26%, 84% 53%, 63% 80%, 25% 82%);
+          clip-path: polygon(23% 25%, 63% 26%, 84% 53%, 63% 80%, 25% 82%);
   display: block;
   position: absolute;
-  width: 3.5rem;
-  height: 4.5rem;
   background-color: #000;
-  border-radius: 0 100% 0 0;
-  top: calc( 50% - 2.25rem);
-  left: calc(50% - 1.75rem);
+  top: 0%;
+  left: 0%;
+  bottom: 0;
+  right: 0;
 }
 
 .letter_E .f1, .letter_E .f2 {
@@ -79,9 +80,21 @@ html {
   top: calc( 66% - 4.765%);
 }
 
+.letter_G .f1, .letter_G .letter_E .f2, .letter_E .letter_G .f2, .letter_G .letter_H .f2, .letter_H .letter_G .f2, .letter_G .letter_I .f2, .letter_I .letter_G .f2, .letter_G .letter_N .f2, .letter_N .letter_G .f2, .letter_G .letter_S .f2, .letter_S .letter_G .f2 {
+  -webkit-clip-path: polygon(100% 23%, 29% 23%, 29% 79%, 68% 79%, 68% 55%, 100% 55%);
+          clip-path: polygon(100% 23%, 29% 23%, 29% 79%, 68% 79%, 68% 55%, 100% 55%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .letter_H .f1, .letter_H .f2 {
   width: 9.53%;
-  height: 3rem;
+  height: 37%;
   display: block;
   position: absolute;
   background-color: #000;
@@ -95,8 +108,42 @@ html {
   display: block;
   position: absolute;
   background-color: #000;
-  top: calc(100% - 3rem);
+  top: calc(100% - 37%);
   left: calc(50% - 4.765%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_I .f1, .letter_I .f2 {
+  width: 25%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 25%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.letter_I .f2 {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 25%;
+  left: calc(100% - 25%);
+  bottom: 0;
+  right: 0;
+}
+
+.letter_L .f1, .letter_L .letter_E .f2, .letter_E .letter_L .f2, .letter_L .letter_H .f2, .letter_H .letter_L .f2, .letter_L .letter_I .f2, .letter_I .letter_L .f2, .letter_L .letter_N .f2, .letter_N .letter_L .f2, .letter_L .letter_S .f2, .letter_S .letter_L .f2 {
+  width: 55%;
+  height: 70%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: calc(100% - 55%);
   bottom: 0;
   right: 0;
 }
@@ -123,26 +170,26 @@ html {
   right: 0;
 }
 
-.letter_O .f1, .letter_O .letter_E .f2, .letter_E .letter_O .f2, .letter_O .letter_H .f2, .letter_H .letter_O .f2, .letter_O .letter_N .f2, .letter_N .letter_O .f2, .letter_O .letter_S .f2, .letter_S .letter_O .f2 {
+.letter_O .f1, .letter_O .letter_E .f2, .letter_E .letter_O .f2, .letter_O .letter_H .f2, .letter_H .letter_O .f2, .letter_O .letter_I .f2, .letter_I .letter_O .f2, .letter_O .letter_N .f2, .letter_N .letter_O .f2, .letter_O .letter_S .f2, .letter_S .letter_O .f2 {
   width: 54%;
   height: 56.3%;
   display: block;
   position: absolute;
   background-color: #000;
-  top: calc(50% - 2.25rem);
-  left: calc(50% - 1.75rem);
+  top: calc(50% - 28.15%);
+  left: calc(50% - 27%);
   bottom: 0;
   right: 0;
 }
 
-.letter_P .f1, .letter_P .letter_E .f2, .letter_E .letter_P .f2, .letter_P .letter_H .f2, .letter_H .letter_P .f2, .letter_P .letter_N .f2, .letter_N .letter_P .f2, .letter_P .letter_S .f2, .letter_S .letter_P .f2 {
+.letter_P .f1, .letter_P .letter_E .f2, .letter_E .letter_P .f2, .letter_P .letter_H .f2, .letter_H .letter_P .f2, .letter_P .letter_I .f2, .letter_I .letter_P .f2, .letter_P .letter_N .f2, .letter_N .letter_P .f2, .letter_P .letter_S .f2, .letter_S .letter_P .f2 {
   width: 52.19%;
   height: 47.63%;
   display: block;
   position: absolute;
   background-color: #000;
   top: calc(100% - 47.63%);
-  left: calc(100% - 52.19%);
+  left: calc(100% - 51%);
   bottom: 0;
   right: 0;
 }
@@ -181,27 +228,21 @@ html {
   right: 0;
 }
 
-.hero__logo {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.letter_Y {
+  background-color: black;
 }
 
-.logo-1, .logo-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.letter_Y .f1, .letter_Y .letter_E .f2, .letter_E .letter_Y .f2, .letter_Y .letter_H .f2, .letter_H .letter_Y .f2, .letter_Y .letter_I .f2, .letter_I .letter_Y .f2, .letter_Y .letter_N .f2, .letter_N .letter_Y .f2, .letter_Y .letter_S .f2, .letter_S .letter_Y .f2 {
+  -webkit-clip-path: polygon(32% 100%, 71% 100%, 70% 58%, 100% 28%, 100% 0, 68% 0, 50% 21%, 29% 0, 0 0, 0 26%, 32% 57%);
+          clip-path: polygon(32% 100%, 71% 100%, 70% 58%, 100% 28%, 100% 0, 68% 0, 50% 21%, 29% 0, 0 0, 0 26%, 32% 57%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0%;
+  left: 0%;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
 }
 
 body {

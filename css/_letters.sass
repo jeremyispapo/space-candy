@@ -41,14 +41,8 @@
 
 .letter_D
 	.f1
-		display: block
-		position: absolute
-		width: 3.5rem
-		height: 4.5rem
-		background-color: #000
-		border-radius: 0 100% 0 0
-		top: calc( 50% - 2.25rem)
-		left: calc(50% - 1.75rem)
+		clip-path: polygon(23% 25%, 63% 26%, 84% 53%, 63% 80%, 25% 82%)
+		@include letter_position($left: 0%, $top: 0%)
 
 .letter_E
 	.f1
@@ -63,14 +57,34 @@
 		@extend .f1
 		top: calc( 66% - 4.765% )
 
+.letter_G
+	.f1
+		clip-path: polygon(100% 23%, 29% 23%, 29% 79%, 68% 79%, 68% 55%, 100% 55%)
+		@include letter_position($left: 0)
+
 .letter_H
 	.f1
 		width: 9.53%
-		height: 3rem
+		height: 37%
 		@include letter_position($left: calc(50% - 4.765%))
 	.f2
 		@extend .f1
-		@include letter_position($top: calc(100% - 3rem), $left:calc(50% - 4.765%))
+		@include letter_position($top: calc(100% - 37%), $left:calc(50% - 4.765%))
+
+.letter_I
+	.f1
+		width: 25%
+		height: 50%
+		@include letter_position($top: (50% - 25%))
+	.f2
+		@extend .f1
+		@include letter_position($top: (50% - 25%),$left: calc(100% - 25%))
+
+.letter_L
+	.f1
+		width: 55%
+		height: 70%
+		@include letter_position($left: calc(100% - 55%))
 
 .letter_N
 	.f1
@@ -85,12 +99,12 @@
 	.f1
 		width: 54%	
 		height: 56.3%
-		@include letter_position($left: calc(50% - 1.75rem), $top: calc(50% - 2.25rem))
+		@include letter_position($left: calc(50% - 27%), $top: calc(50% - 28.15%))
 .letter_P
 	.f1
 		width: 52.19%
 		height: 47.63%
-		@include letter_position($left: calc(100% - 52.19%), $top: calc(100% - 47.63%))
+		@include letter_position($left: calc(100% - 51%), $top: calc(100% - 47.63%))
 	.f2
 		width: 43.5%
 		height: 17.87%
@@ -105,12 +119,10 @@
 		@extend .f1
 		@include letter_position($left: calc(100% - 55.08%), $top: calc(33% - 4.765% ))
 
-.hero__logo
-	height: 100vh
-	display: flex
-	flex-direction: column
-	justify-content: center
-	align-items: center
+.letter_Y
+	background-color: black
+	.f1
+		clip-path: polygon(32% 100%, 71% 100%, 70% 58%, 100% 28%, 100% 0, 68% 0, 50% 21%, 29% 0, 0 0, 0 26%, 32% 57%);
 
-.logo-1 , .logo-2
-	display: flex
+		@include letter_position($top: 0%, $left: 0%)
+		background-color: #fff
