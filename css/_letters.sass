@@ -1,15 +1,10 @@
 [class^="letter_"]
 	display: block
 	position: relative
-	width: 7.5rem
-	height: 9rem
+	width:  100% //7.5rem
+	height:  100% //9rem
 	background-color: $color_secundario
 	border: 5px solid #000
-
-.logo-2 [class^="letter_"]
-	width: 9rem
-	height: 11.5rem
-	border: 8px solid #000
 
 .letter_A	
 	.f1
@@ -64,12 +59,12 @@
 
 .letter_H
 	.f1
-		width: 9.53%
+		width: 12%
 		height: 37%
-		@include letter_position($left: calc(50% - 4.765%))
+		@include letter_position($left: calc(50% - 6%))
 	.f2
 		@extend .f1
-		@include letter_position($top: calc(100% - 37%), $left:calc(50% - 4.765%))
+		@include letter_position($top: calc(100% - 37%), $left:calc(50% - 6%))
 
 .letter_I
 	.f1
@@ -88,7 +83,7 @@
 
 .letter_N
 	.f1
-		width: 9.53%
+		width: 15%
 		height: 33.03%
 		@include letter_position($left: calc(66% - 4.765%))
 	.f2
@@ -103,8 +98,8 @@
 .letter_P
 	.f1
 		width: 52.19%
-		height: 47.63%
-		@include letter_position($left: calc(100% - 51%), $top: calc(100% - 47.63%))
+		height: 45%
+		@include letter_position($left: calc(100% - 51%), $top: calc(100% - 45%))
 	.f2
 		width: 43.5%
 		height: 17.87%
@@ -126,3 +121,6 @@
 
 		@include letter_position($top: 0%, $left: 0%)
 		background-color: #fff
+
+.hero__shop [class^="letter_"], .hero__login [class^="letter_"]
+	border: 3px solid #000
