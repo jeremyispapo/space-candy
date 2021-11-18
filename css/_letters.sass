@@ -90,6 +90,14 @@
 		@extend .f1
 		@include letter_position($top: calc(100% - 33.03%), $left:calc(33% - 4.765%))
 
+.letter_M
+	.f1
+		clip-path: 	polygon(33% 100%, 33% 71%, 50% 90%, 66% 72%, 66% 100%)
+		@include letter_position($top: 0)
+	.f2
+		clip-path: polygon(65% 0, 37% 0, 51% 15%)
+		@include letter_position($top:0)
+
 .letter_O
 	.f1
 		width: 54%	

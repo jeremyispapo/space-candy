@@ -299,6 +299,30 @@ body {
   right: 0;
 }
 
+.letter_M .f1, .letter_M .letter_E .f2, .letter_E .letter_M .f2, .letter_M .letter_H .f2, .letter_H .letter_M .f2, .letter_M .letter_I .f2, .letter_I .letter_M .f2, .letter_M .letter_N .f2, .letter_N .letter_M .f2, .letter_M .letter_S .f2, .letter_S .letter_M .f2 {
+  -webkit-clip-path: polygon(33% 100%, 33% 71%, 50% 90%, 66% 72%, 66% 100%);
+          clip-path: polygon(33% 100%, 33% 71%, 50% 90%, 66% 72%, 66% 100%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.letter_M .f2 {
+  -webkit-clip-path: polygon(65% 0, 37% 0, 51% 15%);
+          clip-path: polygon(65% 0, 37% 0, 51% 15%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .letter_O .f1, .letter_O .letter_E .f2, .letter_E .letter_O .f2, .letter_O .letter_H .f2, .letter_H .letter_O .f2, .letter_O .letter_I .f2, .letter_I .letter_O .f2, .letter_O .letter_N .f2, .letter_N .letter_O .f2, .letter_O .letter_S .f2, .letter_S .letter_O .f2 {
   width: 54%;
   height: 56.3%;

@@ -402,7 +402,22 @@ body {
   border: 3px solid #000;
 }
 
-body {
-  background-color: #292929;
+.admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-before: 2.5rem;
+          margin-block-start: 2.5rem;
 }
-/*# sourceMappingURL=style.css.map */
+
+.admin__logo {
+  width: 28rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=admin.css.map */
