@@ -13,3 +13,65 @@
 	width: 28rem
 	height: 7rem
 	display: flex
+
+main
+	display: flex
+	justify-content: center
+
+.main__wrapper
+	display: grid
+	grid-template-rows:  repeat(3,auto)
+	grid-gap: 1.5rem
+	max-width: 75rem
+	width: 90%
+	background: #ffffff25
+	border-radius: .7rem
+	padding: 1.5rem
+	margin-block: 3rem
+	align-items: start
+
+.main__section
+	@include boxFunction
+
+.boxTitle--admin
+	display: inline-block
+	text-transform: uppercase
+	margin-block-end: 1.5rem
+	font-size: 2rem
+.subTitle--admin
+	font-size: 1.5rem
+label
+	display: block
+	margin-block-end: 1.5rem
+	margin-inline-start: 1.5rem
+
+.boxTitle--admin, .subTitle--admin
+	text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+	color: #ffffff
+
+.inputText
+	@include inputText
+
+.button
+
+	transition: ease .3s
+	margin-block-start: 1.5rem
+	@include buttonTemplate
+	border-radius: .3rem
+	&:hover
+		background-color: #6ccd4c
+
+.Candy__container
+	display: flex
+	justify-content: space-around
+
+.Candy__inputs
+	width: 40%
+
+.previewCandy
+	width: 20rem
+	height: 20rem
+	background: #fff
+	border-radius: .7rem
+	border: 3px solid #000
+	align-self: center 

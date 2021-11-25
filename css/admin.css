@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -419,5 +420,112 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  grid-gap: 1.5rem;
+  max-width: 75rem;
+  width: 90%;
+  background: #ffffff25;
+  border-radius: .7rem;
+  padding: 1.5rem;
+  margin-block: 3rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.main__section {
+  background: #0e2947d0;
+  border-radius: .7rem;
+  padding: 1rem;
+}
+
+.boxTitle--admin {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  font-size: 2rem;
+}
+
+.subTitle--admin {
+  font-size: 1.5rem;
+}
+
+label {
+  display: block;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  -webkit-margin-start: 1.5rem;
+          margin-inline-start: 1.5rem;
+}
+
+.boxTitle--admin, .subTitle--admin {
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  color: #ffffff;
+}
+
+.inputText {
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  border-radius: .3rem;
+  padding: .3rem;
+  font-weight: 600;
+}
+
+.button {
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  -webkit-margin-before: 1.5rem;
+          margin-block-start: 1.5rem;
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  margin-inline: auto;
+  border-radius: .3rem;
+}
+
+.button:hover {
+  background-color: #6ccd4c;
+}
+
+.Candy__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Candy__inputs {
+  width: 40%;
+}
+
+.previewCandy {
+  width: 20rem;
+  height: 20rem;
+  background: #fff;
+  border-radius: .7rem;
+  border: 3px solid #000;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=admin.css.map */

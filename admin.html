@@ -5,6 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Space Candy || Admin</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/admin.css">
 </head>
@@ -35,54 +38,71 @@
 		</section>
 	</header>
 	<main>
-		<section class="main__wraper">
+		<section class="main__wrapper">
 			<section class="main__section createCandy">
-				<h2>Crear Caramelos</h2>
-				<form>
-					<label for="nameCandy">
-						<h4>Nombre</h4>
-						<input type="text" id="nameCandy">
-					</label>
-					<label for="typeCandy">
-						<h4>Tipo</h4>
-						<select name="tipoCaramelo" id="typeCandy">
-							<option selected value="0">Tipo Caramelo</option>
-							<option value="lollipop">Paleta</option>
-							<option value="candy">Caramelo</option>
-							<option value="gum">Chicle</option>
-						</select>
-					</label>
-					<label for="colorCandy">
-						<h4>Color</h4>
-						<input type="color">
-					</label>
-					<label for="powerCandy">
-						<h4>Poder</h4>
-						<input type="text">
-					</label>
-					<label for="priceCandy">
-						<h4>Precio</h4>
-						<input type="number" id="priceCandy">
-					</label>
-					<button>Crear Caramelo</button>
+				<h2 class="boxTitle--admin">Crear Caramelos</h2>
+				<form class="createCandy__form">
+					<div class="Candy__container">
+						<div class="Candy__inputs">
+							<label for="nameCandy">
+								<h4 class="subTitle--admin">Nombre</h4>
+								<input type="text" class="inputText" id="nameCandy">
+							</label>
+							<label for="typeCandy">
+								<h4 class="subTitle--admin">Tipo</h4>
+								<select name="tipoCaramelo" id="typeCandy">
+									<option selected value="0">Tipo Caramelo</option>
+									<option value="lollipop">Paleta</option>
+									<option value="candy">Caramelo</option>
+									<option value="gum">Chicle</option>
+								</select>
+							</label>
+							<label for="colorCandy">
+								<h4 class="subTitle--admin">Color</h4>
+								<input type="color" id="colorCandy">
+							</label>
+							<label for="powerCandy">
+								<h4 class="subTitle--admin">Poder</h4>
+								<input type="text" class="inputText" id="powerCandy">
+							</label>
+							<label for="priceCandy">
+								<h4 class="subTitle--admin">Precio</h4>
+								<input type="number" class="inputText"  id="priceCandy">
+							</label>
+						</div>
+						<div class="previewCandy"></div>
+					</div>
+					<button class="button">Crear Caramelo</button>
 				</form>
 			</section>
 			<section class="main__section consultCandy">
-				<h2>Consultar Caramelos</h2>
-				<form action="">
-					<label for="consultCandy">
-						<input type="text" name="consult" id="cosultCandy">
-					</label>
-					<button>Consultar Caramelo</button>
+				<h2 class="boxTitle--admin">Consultar Caramelos</h2>
+				<form class="consultCandy__form">
+					<div class="Candy__container">
+						<div class="Candy__inputs">
+							<label for="consultCandy">
+								<h4 class="subTitle--admin">Identificador</h4>
+								<input type="text" class="inputText" name="consult" id="cosultCandy">
+							</label>
+						</div>
+						<div class="previewCandy"></div>
+					</div>
+					<button class="button">Consultar Caramelo</button>
 				</form>
 			</section>
 			<section class="main__section deleteCandy">
-				<h2>Eliminar Caramelos</h2>
-				<form>
-					<label for="deleteCandy">
-						<input type="text" id="deleteCandy">
-					</label>
-					<button>Eliminar Caramelo</button>
+				<h2 class="boxTitle--admin">Eliminar Caramelos</h2>
+				<form class="deleteCandy__form">
+					<div class="Candy__container">
+						<div class="Candy__inputs">
+							<label for="deleteCandy">
+								<h4 class="subTitle--admin">Identificador</h4>
+								<input type="text" class="inputText" id="deleteCandy">
+							</label>
+						</div>
+						<div class="previewCandy"></div>
+					</div>
+					<button class="button">Eliminar Caramelo</button>
 				</form>
 			</section>
 		</section>
