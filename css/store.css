@@ -112,8 +112,8 @@ body {
 }
 
 .hero__login {
-  width: 17rem;
-  height: 4rem;
+  width: 27rem;
+  height: 6rem;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -129,8 +129,8 @@ body {
 }
 
 .hero__shop {
-  width: 13rem;
-  height: 4rem;
+  width: 24rem;
+  height: 6rem;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -403,6 +403,16 @@ body {
   border: 3px solid #000;
 }
 
+header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1800px;
+  position: relative;
+  background: red;
+  margin: 0 auto;
+}
+
 .shop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,5 +434,115 @@ body {
 
 .shop__logo [class^="letter_"] {
   border: 3px solid #000;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__wrapper {
+  -webkit-margin-before: 3rem;
+          margin-block-start: 3rem;
+  background: #000000;
+  max-width: 120rem;
+  width: 80%;
+  background: #ffffff25;
+  border-radius: .7rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: mas;
+      grid-template-rows: mas;
+  gap: 2.5rem;
+  padding: 2rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40rem;
+  background: #fff;
+  border-radius: .7rem;
+  padding: 1rem;
+}
+
+.card__image {
+  border: 4px solid #233249;
+  border-radius: .7rem;
+  height: 60%;
+  background: #31435e;
+  position: relative;
+}
+
+.card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 9rem;
+  height: 3.5rem;
+  background: #233249;
+  border-top-left-radius: .7rem;
+  color: #fff;
+  right: 0;
+  bottom: 0;
+  font-size: 1.9rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.card__description {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.card__title {
+  font-size: 2rem;
+  text-align: center;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+}
+
+.card__text {
+  font-size: 1.4rem;
+}
+
+.card__button {
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  margin-inline: auto;
+  border-radius: .7rem;
+  background: #223249;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=store.css.map */
