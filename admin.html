@@ -50,7 +50,7 @@
 							</label>
 							<label for="typeCandy">
 								<h4 class="subTitle--admin">Tipo</h4>
-								<select name="tipoCaramelo" id="typeCandy">
+								<select name="tipoCaramelo" id="typeCandy" disabled>
 									<option selected value="0">Tipo Caramelo</option>
 									<option value="lollipop">Paleta</option>
 									<option value="candy">Caramelo</option>
@@ -59,18 +59,19 @@
 							</label>
 							<label for="colorCandy">
 								<h4 class="subTitle--admin">Color</h4>
-								<input type="color" id="colorCandy">
+								<input type="color" id="colorCandy" disabled>
 							</label>
 							<label for="powerCandy">
-								<h4 class="subTitle--admin">Poder</h4>
-								<input type="text" class="inputText" id="powerCandy">
+								<h4 class="subTitle--admin">Descripcion de Efectos</h4>
+								<textarea class="inputText" name="" id="powerCandy" cols="50" rows="5" disabled></textarea>
 							</label>
 							<label for="priceCandy">
 								<h4 class="subTitle--admin">Precio</h4>
-								<input type="number" class="inputText"  id="priceCandy">
+								<input type="number" class="inputText"  id="priceCandy" disabled>
 							</label>
 						</div>
-						<div id="createCandyPreview" class="previewCandy">
+						<div class="previewCandy candyView">
+						</div>
 						</div>
 					</div>
 					<button type="button" id="createCandy" class="button">Crear Caramelo</button>
@@ -108,6 +109,6 @@
 			</section>
 		</section>
 	</main>
-	<script src="js/createCandy.mjs"></script>
+	<script src="js/createCandy.mjs" type="module"></script>
 </body>
 </html>

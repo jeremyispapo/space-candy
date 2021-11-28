@@ -1,3 +1,6 @@
+import renderCandy from "./renderCandys.js"
+
+
 const stringCandys = localStorage.getItem('TotalCandys')
 const bruteCandys = JSON.parse(stringCandys)
 const Candys = bruteCandys.map(candy => JSON.parse(candy))
@@ -23,8 +26,8 @@ class CreateCard{
 	createHTML() {
 		const card = document.createElement('article')
 		card.className = 'card'
-		card.innerHTML = `
-		<section class="card__image">
+		card.innerHTML += `
+		<section class="card__image candyView">
 			<span class="card__price">$${this.price}</span>
 		</section>
 		<section class="card__description">
@@ -33,16 +36,23 @@ class CreateCard{
 		</section>
 		<button class="card__button">Comprar</button>
 		`
+
 		container.appendChild(card)
+	}
+	viewCandy(view,type,color){
+		renderCandy(view,type,color)
 	}
 }
 
-Candys.forEach(({name,color,power,price}) => {
+Candys.forEach(({name,color,power,price,type},index) => {
 	const candy = new CreateCard({
 		name,
 		color,
 		power,
 		price,
+		type,
 	})
 	candy.createHTML()
+	const candyView = document.querySelectorAll('.candyView')
+	candy.viewCandy(candyView[index],type, color)
 })

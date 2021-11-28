@@ -505,9 +505,11 @@ label {
   border-radius: .3rem;
   padding: .3rem;
   font-weight: 600;
+  resize: none;
 }
 
 .button {
+  cursor: pointer;
   -webkit-transition: ease .3s;
   transition: ease .3s;
   -webkit-margin-before: 1.5rem;
@@ -522,7 +524,7 @@ label {
 }
 
 .button:hover {
-  background-color: #6ccd4c;
+  background-color: #e92a2a;
 }
 
 .Candy__container {
