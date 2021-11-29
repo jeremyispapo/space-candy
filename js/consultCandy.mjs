@@ -5,6 +5,7 @@ const consultView = document.querySelector('.consultView')
 const button = document.getElementById('consultCandyButton')
 
 button.addEventListener('click', () => {
+	consultView.innerHTML = ''
 	const stringCandys = localStorage.getItem('TotalCandys')
 	const bruteCandys = JSON.parse(stringCandys)
 	const Candys = bruteCandys.map(candy => JSON.parse(candy))
